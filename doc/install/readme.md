@@ -119,7 +119,7 @@ for the OPC-N2 (in contradiction to the software repo readme).
     7. `cd Adafruit_Python_GPIO && sudo python setup.py install`
     8. `cd ..`
     9. `cd Adafruit_Python_BME280 && sudo python setup.py install`
-   10. `cd ..`
-   11. `cd py-opc && sudo python setup.py install`
-   12. `sudo apt-get install python-pandas`
+    10. `cd ..`
+    11. `cd py-opc && sudo python setup.py install`
+    12. `sudo apt-get install python-pandas`
 
