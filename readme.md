@@ -24,4 +24,4 @@ seconds, converted into a JSON string and are recorded then transferred and stor
 
 * [Initial setup](doc/install/)
 
-* [Connect to Urbanova Cloud / AWS IoT](doc/setup/AWS_IoT_Connectivity.md)
+* [Connect to Urbanova Cloud / AWS IoT](doc/setup/AWS_IoT_connectivity.md)
