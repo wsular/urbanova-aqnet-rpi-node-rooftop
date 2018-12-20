@@ -8,16 +8,16 @@ July 3, 2018
 
 Because the Urbanova Cloud user interface console is still in design and develop phase, we will use the native AWS console and workflow (WSU account) to provision IoT services for WSU LAR.
 
-The first step is to <span style="color:green">Onboard a Device</span>:
+The first step is to <font color="green">Onboard a Device</font>:
 
 1.	From the AWS Console (WSU Account) select IoT Core
-2.	Choose <span style="color:green">Onboard</span> from the left panel menu
-3.	Choose <span style="color:green">Configuring a Device</span>
+2.	Choose <font color="green">Onboard</font> from the left panel menu
+3.	Choose <font color="green">Configuring a Device</font>
 4.	Select Next to start the configuration workflow
 5.	Choose the device local environment settings and select next:
 ![](ConnectingToAWS.png)
 6. Provide a name for your device and select Next
-7. Download the <span style="color:green">Connection Kit</span>
+7. Download the <font color="green">Connection Kit</font>
 
 &nbsp;&nbsp;&nbsp;&nbsp;The following resources are created when you download the Connection Kit:
 	
@@ -31,7 +31,7 @@ The first step is to <span style="color:green">Onboard a Device</span>:
 
 ## Device Local Configuration and IoT Connectivity
 
-1.	Install <span style="color:green">Prerequisites</span>:
+1.	Install <font color="green">Prerequisites</font>:
  
  &nbsp;&nbsp;&nbsp;&nbsp;The device must have the following perquisites install prior to executing the install script from AWS:
  
@@ -54,13 +54,13 @@ The first step is to <span style="color:green">Onboard a Device</span>:
   
  * **Internet access on port 8883** - The standard port for using MQTT of SSL is port 8883.
 
-2.	Copy the Connection Kit from local computer to your device (command below is just an example of using SCP from unix-based computer):
+2.	Copy the <font color="green">Connection Kit</font> from local computer to your device (command below is just an example of using SCP from unix-based computer):
  
  ```
  scp ~/Downloads/connect_device_package.zip pi@xxx.xxx.xxx:~/urbanova/iot
  ```
   
-3.	Unzip the <span style="color:green">Connection Kit</span> on the device
+3.	Unzip the <font color="green">Connection Kit</font> on the device
  
  ```
  ssh pi@xxx.xxx.xxx
@@ -86,14 +86,14 @@ The first step is to <span style="color:green">Onboard a Device</span>:
 
 ## IoT Device Connectivity Testing
 
-The <span style="color:green">start.sh</span> executes the example application located at <span style="color:green">aws-iot-device-sdk-python/samples/basicPubSub/basicPubSub.py</span> uses the default messages topic “<span style="color:green">sdk/test/Python</span>” to send messages from the device.
+The <font color="green">start.sh</font> executes the example application located at <font color="green">aws-iot-device-sdk-python/samples/basicPubSub/basicPubSub.py</font> uses the default messages topic “<font color="green">sdk/test/Python</font>” to send messages from the device.
 
 The example application is a good starting point to develop your IoT endpoint messaging architecture.  It is worth taking a look at the source code for this file.  The source code is only 125 lines.
 
 We will now test that messages from the device can be securely subscribed and received from Urbanova Cloud / AWS IoT:
 
-1.	From <span style="color:green">IoT Core</span> select <span style="color:green">Test<span> from the left menu panel
-2.	Select Subscribe to a <span style="color:green">Topic</span>
-3.	In the Subscription topic text box enter “<span style="color:green">sdk/test/Python</span>”
+1.	From <font color="green">IoT Core</font> select <font color="green">Test</font> from the left menu panel
+2.	Select Subscribe to a <font color="green">Topic</font>
+3.	In the Subscription topic text box enter “<font color="green">sdk/test/Python</font>”
 4.	Click Subscribe and view results below (make sure endpoint application is running)
 ![](SubscriptionToAWS.png)
