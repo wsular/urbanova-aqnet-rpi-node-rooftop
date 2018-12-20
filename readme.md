@@ -23,3 +23,5 @@ seconds, converted into a JSON string and are recorded then transferred and stor
 ### Documentation
 
 * [Initial setup](doc/install/)
+
+* [Connect to Urbanova Cloud / AWS IoT](doc/setup/Guidance Document for WSU LAR AQ Device Connectivity to Urbanova Cloud - AWS IoT.md)
